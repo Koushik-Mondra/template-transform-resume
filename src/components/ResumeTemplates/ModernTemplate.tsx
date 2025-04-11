@@ -1,6 +1,5 @@
-
 import { ResumeData } from '@/types';
-import { Phone, Mail, Globe, Linkedin, GitHub, MapPin, Calendar } from 'lucide-react';
+import { Phone, Mail, Globe, Linkedin, Github, MapPin, Calendar } from 'lucide-react';
 
 interface ModernTemplateProps {
   data: ResumeData;
@@ -44,7 +43,7 @@ const ModernTemplate = ({ data }: ModernTemplateProps) => {
               )}
               {personalInfo.github && (
                 <li className="flex items-center text-sm">
-                  <GitHub className="h-4 w-4 mr-2" />
+                  <Github className="h-4 w-4 mr-2" />
                   <span>{personalInfo.github}</span>
                 </li>
               )}

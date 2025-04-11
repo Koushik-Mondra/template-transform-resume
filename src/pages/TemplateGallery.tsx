@@ -1,4 +1,3 @@
-
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
@@ -50,6 +49,7 @@ const templates: ResumeTemplate[] = [
 
 const TemplateGallery = () => {
   const [importedResumeData, setImportedResumeData] = useState<File | null>(null);
+  const [activeTab, setActiveTab] = useState<string>("templates");
 
   return (
     <div className="flex flex-col min-h-screen">
@@ -66,7 +66,7 @@ const TemplateGallery = () => {
             </p>
           </div>
           
-          <Tabs defaultValue="templates">
+          <Tabs defaultValue="templates" onValueChange={setActiveTab}>
             <TabsList className="grid w-full max-w-md mx-auto grid-cols-2 mb-8">
               <TabsTrigger value="templates">Choose Template</TabsTrigger>
               <TabsTrigger value="import">Import Resume</TabsTrigger>
@@ -106,10 +106,8 @@ const TemplateGallery = () => {
                     <p className="text-green-600 font-medium mb-4">
                       Resume successfully uploaded! Now select a template to continue.
                     </p>
-                    <Button asChild>
-                      <Link to="#templates" onClick={() => document.querySelector('[data-value="templates"]')?.click()}>
-                        Choose a Template
-                      </Link>
+                    <Button onClick={() => setActiveTab("templates")}>
+                      Choose a Template
                     </Button>
                   </div>
                 )}
