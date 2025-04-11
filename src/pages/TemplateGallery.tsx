@@ -1,3 +1,4 @@
+
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
@@ -12,37 +13,37 @@ const templates: ResumeTemplate[] = [
   {
     id: 'modern',
     name: 'Modern',
-    thumbnail: '/placeholder.svg',
+    thumbnail: 'https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?auto=format&fit=crop&w=600&h=800&q=80',
     description: 'Clean layout with a sidebar for a contemporary look'
   },
   {
     id: 'classic',
     name: 'Classic',
-    thumbnail: '/placeholder.svg',
+    thumbnail: 'https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=600&h=800&q=80',
     description: 'Traditional format that works for all industries'
   },
   {
     id: 'minimalist',
     name: 'Minimalist',
-    thumbnail: '/placeholder.svg',
+    thumbnail: 'https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&w=600&h=800&q=80',
     description: 'Simple and elegant design with clean typography'
   },
   {
     id: 'creative',
     name: 'Creative',
-    thumbnail: '/placeholder.svg',
+    thumbnail: 'https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=600&h=800&q=80',
     description: 'Bold design for creative professionals'
   },
   {
     id: 'professional',
     name: 'Professional',
-    thumbnail: '/placeholder.svg',
+    thumbnail: 'https://images.unsplash.com/photo-1483058712412-4245e9b90334?auto=format&fit=crop&w=600&h=800&q=80',
     description: 'Sophisticated layout for executive positions'
   },
   {
     id: 'chronological',
     name: 'Chronological',
-    thumbnail: '/placeholder.svg',
+    thumbnail: '/lovable-uploads/12fab9d2-5c20-49d5-ae4e-f04aa65062c0.png',
     description: 'Time-focused layout highlighting experience'
   }
 ];
